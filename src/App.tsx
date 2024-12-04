@@ -7,6 +7,7 @@ import { AboutSection } from "./components/sections/AboutSection";
 import { TestimonialsSection } from "./components/sections/TestimonialsSection";
 import { CalculatorSection } from "./components/sections/CalculatorSection";
 import { ContactSection } from "./components/sections/ContactSection";
+import KnowLeadgeCenterPage from "./pages/knowledgeCenter";
 
 function App() {
   const LandingPage = () => {
@@ -28,7 +29,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/knowledge-center" />
+          <Route path="/knowledge-center" element={<KnowLeadgeCenterPage />} />
         </Routes>
       </main>
       <Footer />
