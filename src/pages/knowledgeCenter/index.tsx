@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { styled } from "@mui/material/styles";
-import { Stack, Typography, Button, CardContent, Card } from "@mui/material";
+import { Stack, Typography, Button, CardContent } from "@mui/material";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import ArticleIcon from "@mui/icons-material/Article";
 import ImageIcon from "@mui/icons-material/Image";
@@ -19,7 +19,7 @@ const Section = styled("section")({
   flexDirection: "column",
 });
 
-const Content = styled(Typography)(({ theme }) => ({
+const Content = styled(Typography)(() => ({
   height: "100%",
   fontWeight: "bold",
   fontSize: "3rem",
