@@ -17,7 +17,6 @@ export function Header() {
         scroller.scrollTo(sectionId, {
           duration: 500,
           smooth: true,
-          offset: -70, // Adjust for header height if needed
         });
       }, 500);
     } else {
@@ -25,7 +24,6 @@ export function Header() {
       scroller.scrollTo(sectionId, {
         duration: 500,
         smooth: true,
-        offset: -70, // Adjust for header height if needed
       });
     }
   };
