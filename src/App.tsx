@@ -7,7 +7,13 @@ import { AboutSection } from "./components/sections/AboutSection";
 import { TestimonialsSection } from "./components/sections/TestimonialsSection";
 import { CalculatorSection } from "./components/sections/CalculatorSection";
 import { ContactSection } from "./components/sections/ContactSection";
-import KnowLeadgeCenterPage from "./pages/knowledgeCenter";
+import KnowLeadgeCenterPage from "./components/pages/KnowledgeCenterPage";
+import { LegalDisclaimers } from "./components/sections/LegalDisclaimer";
+import { AIFProducts } from "./components/pages/AIFProductsPage";
+import { AlgoTrading } from "./components/pages/AlgoTradingPage";
+import { EquityPMS } from "./components/pages/EquityPMSPage";
+import { MutualFunds } from "./components/pages/MutualFundsPage";
+import { PreIPO } from "./components/pages/PreIpoEquityPage";
 
 function App() {
   const LandingPage = () => {
@@ -15,6 +21,7 @@ function App() {
       <div>
         <HeroSection />
         <ServicesSection />
+        <LegalDisclaimers />
         <AboutSection />
         <TestimonialsSection />
         <CalculatorSection />
@@ -29,6 +36,11 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/equity-pms" element={<EquityPMS />} />
+          <Route path="/algo-trading" element={<AlgoTrading />} />
+          <Route path="/mutual-funds" element={<MutualFunds />} />
+          <Route path="/aif-products" element={<AIFProducts />} />
+          <Route path="/pre-ipo" element={<PreIPO />} />
           <Route path="/knowledge-center" element={<KnowLeadgeCenterPage />} />
         </Routes>
       </main>

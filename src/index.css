@@ -45,10 +45,36 @@
 }
 
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0) rotateY(-5deg) rotateX(2deg);
   }
   50% {
     transform: translateY(-10px) rotateY(-5deg) rotateX(2deg);
   }
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateX(var(--x-offset)) translateY(100%);
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(var(--x-offset)) translateY(-130%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(var(--x-offset)) translateY(-400%);
+  }
+}
+
+.testimonial-float {
+  --x-offset: 0px;
+  --delay: 0s;
+  animation: floatUp 15s ease-in-out forwards;
+  animation-delay: var(--delay);
 }
