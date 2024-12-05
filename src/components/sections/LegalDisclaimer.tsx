@@ -1,5 +1,3 @@
-import React from "react";
-
 export function LegalDisclaimers() {
   return (
     <section className="py-12 text-center">
