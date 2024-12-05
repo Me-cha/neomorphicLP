@@ -58,7 +58,7 @@ export function ServicesSection() {
           data={bg1}
           loop={true}
           autoplay={true}
-          segment={[0, 150]}
+          segment={[0, 145]}
           mode="bounce"
         />
       </div>
