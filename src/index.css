@@ -77,4 +77,11 @@
   --delay: 0s;
   animation: floatUp 15s ease-in-out forwards;
   animation-delay: var(--delay);
+  animation-play-state: running;
+}
+
+.testimonial-float:hover {
+  animation-play-state: paused;
+  z-index: 40;
+  scale: 1.3;
 }

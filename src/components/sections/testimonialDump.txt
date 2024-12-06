@@ -94,7 +94,7 @@ const testimonials: Testimonial[] = [
 
 type TestimonialCardProps = {
   testimonial: Testimonial;
-  style?: React.CSSProperties;
+  style: React.CSSProperties;
   uniqueId: string;
 };
 
@@ -175,6 +175,7 @@ export function TestimonialsSection() {
               transform: `translateX(${xOffset}px)`,
               bottom: "-100px",
               opacity: 0,
+              animation: "floatUp 15s ease-in-out forwards",
             } as React.CSSProperties
           }
         />
